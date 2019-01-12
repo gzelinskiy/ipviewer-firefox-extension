@@ -30,8 +30,10 @@ xhr.onreadystatechange = function () {
                         div.setAttribute("class", "ipviewer ipviewer_right");
                     }
                 };
+
+                var textNode = document.createTextNode(ip);
                
-                div.innerHTML = ip;
+                div.appendChild(textNode);
                 body.appendChild(div);
                 //console.log(ip);
             }
